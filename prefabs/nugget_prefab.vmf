@@ -1,0 +1,338 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8678"
+	"mapversion" "2"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "2"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	solid
+	{
+		"id" "2"
+		side
+		{
+			"id" "1"
+			"plane" "(-48 -48 208) (-48 48 208) (48 48 208)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(-48 48 0) (-48 -48 0) (48 -48 0)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(-48 -48 0) (-48 48 0) (-48 48 208)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(48 48 0) (48 -48 0) (48 -48 208)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(-48 48 0) (48 48 0) (48 48 208)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(48 -48 0) (-48 -48 0) (-48 -48 208)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 213 182"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "3"
+	"classname" "logic_script"
+	"Group00" "nugget_maker"
+	"Group01" "award_nugget"
+	"Group02" "nugget_text"
+	"targetname" "nugget_script"
+	"vscripts" "nugget/nugget_maker.nut"
+	"origin" "0 0 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "0 = name of maker                                             1 = name of award info_target                           2 = name of nugget game_text entity"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "5"
+	"classname" "env_entity_maker"
+	"angles" "0 0 0"
+	"EntityTemplate" "nugget_maker_template"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0"
+	"spawnflags" "0"
+	"targetname" "nugget_maker"
+	"origin" "0 0 53"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "7"
+	"classname" "trigger_once"
+	"origin" "0 0 96"
+	"spawnflags" "1"
+	"StartDisabled" "0"
+	"targetname" "nugget_activation_trigger"
+	connections
+	{
+		"OnTrigger" "nugget_modelKill0-1"
+		"OnTrigger" "nugget_soundPlaySound0-1"
+		"OnTrigger" "nugget_scriptRunScriptCodeAwardNugget()0-1"
+	}
+	solid
+	{
+		"id" "8"
+		side
+		{
+			"id" "18"
+			"plane" "(-32 -32 184) (-32 32 184) (32 32 184)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "17"
+			"plane" "(-32 32 8) (-32 -32 8) (32 -32 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "16"
+			"plane" "(-32 -32 8) (-32 32 8) (-32 32 184)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 -36.3625] 0.289474"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(32 32 8) (32 -32 8) (32 -32 184)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 -36.3625] 0.289474"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(-32 32 8) (32 32 8) (32 32 184)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 0 -1 -36.3625] 0.289474"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(32 -32 8) (-32 -32 8) (-32 -32 184)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 32] 0.25"
+			"vaxis" "[0 0 -1 -36.3625] 0.289474"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "10"
+	"classname" "cycler"
+	"angles" "0 0 0"
+	"disablereceiveshadows" "0"
+	"model" "models/effects/cappoint_hologram.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"sequence" "0"
+	"skin" "0"
+	"spawnflags" "1"
+	"targetname" "nugget_model"
+	"origin" "0 -0.0100098 68"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "12"
+	"classname" "ambient_generic"
+	"health" "10"
+	"message" "misc/tf_domination.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"radius" "1250"
+	"SourceEntityName" "nugget_model"
+	"spawnflags" "48"
+	"targetname" "nugget_sound"
+	"origin" "0 0 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "15"
+	"classname" "point_template"
+	"spawnflags" "0"
+	"targetname" "nugget_maker_template"
+	"Template01" "nugget_model"
+	"Template02" "nugget_activation_trigger"
+	"Template03" "nugget_sound"
+	"origin" "0 0 76"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "17"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "210 210 210"
+	"color2" "240 110 0"
+	"effect" "2"
+	"fadein" "0.05"
+	"fadeout" "0.5"
+	"fxtime" "0.25"
+	"holdtime" "5"
+	"message" "You got an Aperture Incentivizing Nugget!"
+	"spawnflags" "0"
+	"targetname" "nugget_text"
+	"x" "-1"
+	"y" "-1"
+	"origin" "0 0 28"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}
