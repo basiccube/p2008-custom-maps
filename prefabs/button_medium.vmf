@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8872"
-	"mapversion" "4"
+	"mapversion" "5"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "4"
+	"mapversion" "5"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -498,12 +498,10 @@ entity
 	"spawnflags" "0"
 	"StartDisabled" "0"
 	"targetname" "button&i_check"
-	"vscripts" "button_door/sign.nut"
 	connections
 	{
 		"OnUser1" "button&i_texturetoggleSetTextureIndex10-1"
 		"OnUser2" "button&i_texturetoggleSetTextureIndex00-1"
-		"OnUser1" "button&i_checkRunScriptCode0-1"
 	}
 	solid
 	{
