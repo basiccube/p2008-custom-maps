@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8872"
-	"mapversion" "5"
+	"mapversion" "6"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "5"
+	"mapversion" "6"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -415,7 +415,7 @@ entity
 		"OnUser2" "chamber_door&i_door1Close0-1"
 		"OnUser2" "chamber_door&i_door2Close0-1"
 		"OnUser1" "chamber_door&i_clipDisable0-1"
-		"OnUser2" "chamber_door&i_clipEnable0.25-1"
+		"OnUser2" "chamber_door&i_clipEnable0-1"
 	}
 	"origin" "0 -12 48"
 	editor
