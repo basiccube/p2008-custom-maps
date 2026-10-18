@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8872"
-	"mapversion" "46"
+	"mapversion" "47"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "46"
+	"mapversion" "47"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -104,8 +104,8 @@ world
 			"plane" "(-256 -1.52588e-05 64) (192 -1.52588e-05 64) (192 -576 64)"
 			vertices_plus
 			{
-				"v" "-256 -1.52588e-05 64"
-				"v" "192 -1.52588e-05 64"
+				"v" "-256 -0 64"
+				"v" "192 -0 64"
 				"v" "192 -576 64"
 				"v" "-256 -576 64"
 			}
@@ -124,8 +124,8 @@ world
 			{
 				"v" "-256 -576 32"
 				"v" "192 -576 32"
-				"v" "192 -1.52588e-05 32"
-				"v" "-256 -1.52588e-05 32"
+				"v" "192 -0 32"
+				"v" "-256 -0 32"
 			}
 			"material" "TILE/TILE_FLOOR001A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -140,10 +140,10 @@ world
 			"plane" "(-256 -1.52588e-05 64) (-256 -576 64) (-256 -576 32)"
 			vertices_plus
 			{
-				"v" "-256 -1.52588e-05 64"
+				"v" "-256 -0 64"
 				"v" "-256 -576 64"
 				"v" "-256 -576 32"
-				"v" "-256 -1.52588e-05 32"
+				"v" "-256 -0 32"
 			}
 			"material" "TILE/TILE_FLOOR001A"
 			"uaxis" "[0 1 0 256] 0.25"
@@ -158,10 +158,10 @@ world
 			"plane" "(192 -1.52588e-05 32) (192 -576 32) (192 -576 64)"
 			vertices_plus
 			{
-				"v" "192 -1.52588e-05 32"
+				"v" "192 -0 32"
 				"v" "192 -576 32"
 				"v" "192 -576 64"
-				"v" "192 -1.52588e-05 64"
+				"v" "192 -0 64"
 			}
 			"material" "TILE/TILE_FLOOR001A"
 			"uaxis" "[0 1 0 256] 0.25"
@@ -176,10 +176,10 @@ world
 			"plane" "(192 -1.52588e-05 64) (-256 -1.52588e-05 64) (-256 -1.52588e-05 32)"
 			vertices_plus
 			{
-				"v" "192 -1.52588e-05 64"
-				"v" "-256 -1.52588e-05 64"
-				"v" "-256 -1.52588e-05 32"
-				"v" "192 -1.52588e-05 32"
+				"v" "192 -0 64"
+				"v" "-256 -0 64"
+				"v" "-256 -0 32"
+				"v" "192 -0 32"
 			}
 			"material" "TILE/TILE_FLOOR001A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -1167,8 +1167,8 @@ world
 			vertices_plus
 			{
 				"v" "192 -304 416"
-				"v" "192 -1.52588e-05 416"
-				"v" "224 -1.52588e-05 416"
+				"v" "192 -0 416"
+				"v" "224 -0 416"
 				"v" "224 -304 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
@@ -1184,10 +1184,10 @@ world
 			"plane" "(192 -1.52588e-05 64) (192 -304 64) (224 -304 64)"
 			vertices_plus
 			{
-				"v" "192 -1.52588e-05 64"
+				"v" "192 -0 64"
 				"v" "192 -304 64"
 				"v" "224 -304 64"
-				"v" "224 -1.52588e-05 64"
+				"v" "224 -0 64"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -1203,8 +1203,8 @@ world
 			vertices_plus
 			{
 				"v" "192 -304 64"
-				"v" "192 -1.52588e-05 64"
-				"v" "192 -1.52588e-05 416"
+				"v" "192 -0 64"
+				"v" "192 -0 416"
 				"v" "192 -304 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
@@ -1220,10 +1220,10 @@ world
 			"plane" "(224 -1.52588e-05 64) (224 -304 64) (224 -304 416)"
 			vertices_plus
 			{
-				"v" "224 -1.52588e-05 64"
+				"v" "224 -0 64"
 				"v" "224 -304 64"
 				"v" "224 -304 416"
-				"v" "224 -1.52588e-05 416"
+				"v" "224 -0 416"
 			}
 			"material" "PLASTER/PLASTER_WALL004A"
 			"uaxis" "[0 1 0 256] 0.25"
@@ -1238,10 +1238,10 @@ world
 			"plane" "(192 -1.52588e-05 64) (224 -1.52588e-05 64) (224 -1.52588e-05 416)"
 			vertices_plus
 			{
-				"v" "192 -1.52588e-05 64"
-				"v" "224 -1.52588e-05 64"
-				"v" "224 -1.52588e-05 416"
-				"v" "192 -1.52588e-05 416"
+				"v" "192 -0 64"
+				"v" "224 -0 64"
+				"v" "224 -0 416"
+				"v" "192 -0 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -1757,8 +1757,8 @@ world
 			vertices_plus
 			{
 				"v" "-288 -304 416"
-				"v" "-288 -1.52588e-05 416"
-				"v" "-256 -1.52588e-05 416"
+				"v" "-288 -0 416"
+				"v" "-256 -0 416"
 				"v" "-256 -304 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
@@ -1774,10 +1774,10 @@ world
 			"plane" "(-288 -1.52588e-05 64) (-288 -304 64) (-256 -304 64)"
 			vertices_plus
 			{
-				"v" "-288 -1.52588e-05 64"
+				"v" "-288 -0 64"
 				"v" "-288 -304 64"
 				"v" "-256 -304 64"
-				"v" "-256 -1.52588e-05 64"
+				"v" "-256 -0 64"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -1793,8 +1793,8 @@ world
 			vertices_plus
 			{
 				"v" "-288 -304 64"
-				"v" "-288 -1.52588e-05 64"
-				"v" "-288 -1.52588e-05 416"
+				"v" "-288 -0 64"
+				"v" "-288 -0 416"
 				"v" "-288 -304 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
@@ -1810,10 +1810,10 @@ world
 			"plane" "(-256 -1.52588e-05 64) (-256 -304 64) (-256 -304 416)"
 			vertices_plus
 			{
-				"v" "-256 -1.52588e-05 64"
+				"v" "-256 -0 64"
 				"v" "-256 -304 64"
 				"v" "-256 -304 416"
-				"v" "-256 -1.52588e-05 416"
+				"v" "-256 -0 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
 			"uaxis" "[0 1 0 256] 0.25"
@@ -1828,10 +1828,10 @@ world
 			"plane" "(-288 -1.52588e-05 64) (-256 -1.52588e-05 64) (-256 -1.52588e-05 416)"
 			vertices_plus
 			{
-				"v" "-288 -1.52588e-05 64"
-				"v" "-256 -1.52588e-05 64"
-				"v" "-256 -1.52588e-05 416"
-				"v" "-288 -1.52588e-05 416"
+				"v" "-288 -0 64"
+				"v" "-256 -0 64"
+				"v" "-256 -0 416"
+				"v" "-288 -0 416"
 			}
 			"material" "PLASTER/PLASTER_WALL003A"
 			"uaxis" "[1 0 0 -256] 0.25"
@@ -3412,7 +3412,7 @@ entity
 {
 	"id" "1154"
 	"classname" "trigger_multiple"
-	"origin" "132 -64.04 80.44"
+	"origin" "133 -64.08 80.44"
 	"spawnflags" "13"
 	"StartDisabled" "0"
 	"wait" "1"
@@ -3427,13 +3427,13 @@ entity
 		side
 		{
 			"id" "1576"
-			"plane" "(153 -88 81.188) (105 -88 81.188) (105 -40 81.188)"
+			"plane" "(168 -104 81.188) (88 -104 81.188) (88 -24 81.188)"
 			vertices_plus
 			{
-				"v" "153 -88 81.188"
-				"v" "105 -88 81.188"
-				"v" "105 -40 81.188"
-				"v" "153 -40 81.188"
+				"v" "168 -104 81.188"
+				"v" "88 -104 81.188"
+				"v" "88 -24 81.188"
+				"v" "168 -24 81.188"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 29.7015] 0.25"
@@ -3445,13 +3445,13 @@ entity
 		side
 		{
 			"id" "1575"
-			"plane" "(153 -40 79.684) (105 -40 79.684) (105 -88 79.684)"
+			"plane" "(168 -24 79.684) (88 -24 79.684) (88 -104 79.684)"
 			vertices_plus
 			{
-				"v" "153 -40 79.684"
-				"v" "105 -40 79.684"
-				"v" "105 -88 79.684"
-				"v" "153 -88 79.684"
+				"v" "168 -24 79.684"
+				"v" "88 -24 79.684"
+				"v" "88 -104 79.684"
+				"v" "168 -104 79.684"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 29.7015] 0.25"
@@ -3463,13 +3463,13 @@ entity
 		side
 		{
 			"id" "1574"
-			"plane" "(105 -40 79.684) (153 -40 79.684) (153 -40 81.1879)"
+			"plane" "(88 -24 79.684) (168 -24 79.684) (168 -24 81.1879)"
 			vertices_plus
 			{
-				"v" "105 -40 79.684"
-				"v" "153 -40 79.684"
-				"v" "153 -40 81.1879"
-				"v" "105 -40 81.1879"
+				"v" "88 -24 79.684"
+				"v" "168 -24 79.684"
+				"v" "168 -24 81.1879"
+				"v" "88 -24 81.1879"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 -38.9939] 0.25"
@@ -3481,13 +3481,13 @@ entity
 		side
 		{
 			"id" "1573"
-			"plane" "(153 -88 79.684) (105 -88 79.684) (105 -88 81.1879)"
+			"plane" "(168 -104 79.684) (88 -104 79.684) (88 -104 81.1879)"
 			vertices_plus
 			{
-				"v" "153 -88 79.684"
-				"v" "105 -88 79.684"
-				"v" "105 -88 81.1879"
-				"v" "153 -88 81.1879"
+				"v" "168 -104 79.684"
+				"v" "88 -104 79.684"
+				"v" "88 -104 81.1879"
+				"v" "168 -104 81.1879"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 -38.9939] 0.25"
@@ -3499,13 +3499,13 @@ entity
 		side
 		{
 			"id" "1572"
-			"plane" "(153 -40 79.684) (153 -88 79.684) (153 -88 81.1879)"
+			"plane" "(168 -24 79.684) (168 -104 79.684) (168 -104 81.1879)"
 			vertices_plus
 			{
-				"v" "153 -40 79.684"
-				"v" "153 -88 79.684"
-				"v" "153 -88 81.1879"
-				"v" "153 -40 81.1879"
+				"v" "168 -24 79.684"
+				"v" "168 -104 79.684"
+				"v" "168 -104 81.1879"
+				"v" "168 -24 81.1879"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 29.7015] 0.25"
@@ -3517,13 +3517,13 @@ entity
 		side
 		{
 			"id" "1571"
-			"plane" "(105 -88 79.684) (105 -40 79.684) (105 -40 81.1879)"
+			"plane" "(88 -104 79.684) (88 -24 79.684) (88 -24 81.1879)"
 			vertices_plus
 			{
-				"v" "105 -88 79.684"
-				"v" "105 -40 79.684"
-				"v" "105 -40 81.1879"
-				"v" "105 -88 81.1879"
+				"v" "88 -104 79.684"
+				"v" "88 -24 79.684"
+				"v" "88 -24 81.1879"
+				"v" "88 -104 81.1879"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 -1 0 29.7015] 0.25"
@@ -4020,82 +4020,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1500 12000]"
-	}
-}
-entity
-{
-	"id" "347"
-	"classname" "light_spot"
-	"_cone" "65"
-	"_exponent" "1"
-	"_inner_cone" "50"
-	"_light" "192 186 165 600"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_quadratic_attn" "1"
-	"angles" "0 0 0"
-	"pitch" "-90"
-	"origin" "-128 -256 424"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "353"
-	"classname" "light_spot"
-	"_cone" "65"
-	"_exponent" "1"
-	"_inner_cone" "50"
-	"_light" "192 186 165 600"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_quadratic_attn" "1"
-	"angles" "0 0 0"
-	"pitch" "-90"
-	"origin" "64 -448 424"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "359"
-	"classname" "func_instance"
-	"angles" "0 0 0"
-	"file" "instances/chamber_end.vmf"
-	"targetname" "exit"
-	"origin" "240 -352 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "1006"
-	"classname" "func_instance"
-	"angles" "0 0 0"
-	"file" "instances/chamber_start.vmf"
-	"targetname" "entrance"
-	"origin" "-880 -352 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
 	}
 }
 entity
@@ -6600,6 +6524,82 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -7268]"
+	}
+}
+entity
+{
+	"id" "347"
+	"classname" "light_spot"
+	"_cone" "65"
+	"_exponent" "1"
+	"_inner_cone" "50"
+	"_light" "192 186 165 600"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"angles" "0 0 0"
+	"pitch" "-90"
+	"origin" "-128 -256 424"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "353"
+	"classname" "light_spot"
+	"_cone" "65"
+	"_exponent" "1"
+	"_inner_cone" "50"
+	"_light" "192 186 165 600"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_quadratic_attn" "1"
+	"angles" "0 0 0"
+	"pitch" "-90"
+	"origin" "64 -448 424"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 8500]"
+	}
+}
+entity
+{
+	"id" "359"
+	"classname" "func_instance"
+	"angles" "0 0 0"
+	"file" "instances/chamber_end.vmf"
+	"targetname" "exit"
+	"origin" "240 -352 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1006"
+	"classname" "func_instance"
+	"angles" "0 0 0"
+	"file" "instances/chamber_start.vmf"
+	"targetname" "entrance"
+	"origin" "-880 -352 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
 	}
 }
 entity

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8872"
-	"mapversion" "2"
+	"mapversion" "5"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -68,7 +68,7 @@ light_plus
 postprocess_plus
 {
 	"enable" "1"
-	"copied_from_controller" "0"
+	"copied_from_controller" "1"
 	"bloom_scale" "1"
 	"bloom_exponent" "2.5"
 	"bloom_saturation" "1"
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "2"
+	"mapversion" "5"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -115,9 +115,9 @@ entity
 	"id" "4"
 	"classname" "weapon_camera"
 	"angles" "0 0 0"
-	"canscale" "1"
-	"canzoom" "1"
-	"captureslots" "3"
+	"canscale" "0"
+	"canzoom" "0"
+	"captureslots" "1"
 	"fademindist" "-1"
 	"fadescale" "1"
 	"spawnflags" "0"
@@ -154,7 +154,7 @@ entity
 	"spawnflags" "1"
 	connections
 	{
-		"OnNewGame" "player_spawn_templateForceSpawn0.1-1"
+		"OnNewGame" "player_spawn_templateForceSpawn0.2-1"
 	}
 	"origin" "0 0 112"
 	editor
@@ -163,6 +163,26 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "25"
+	"classname" "func_instance_io_proxy"
+	"targetname" "player_spawn_proxy"
+	connections
+	{
+		"OnProxyRelay" "player_spawn_cameraSetNumCaptureSlots0-1"
+		"OnProxyRelay" "player_spawn_cameraSetScaleAbility0-1"
+		"OnProxyRelay" "player_spawn_cameraSetZoomAbility0-1"
+	}
+	"origin" "0 0 144"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
