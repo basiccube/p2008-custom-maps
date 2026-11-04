@@ -2,3 +2,6 @@
 *.log
 *.prt
 *.vmx
+
+# Official F-Stop maps
+aperture/
